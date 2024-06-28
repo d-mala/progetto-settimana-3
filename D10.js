@@ -147,10 +147,6 @@ console.log(deleteOne('Ciao', false));
 console.log('ES 5');
 
 function onlyLetters(string) {
-  return string.replace(/[0-9]/g, '');
-}
-
-function onlyLetters(string) {
   let newString = string.split('')
   console.log(newString);
   newString = newString.filter(character => character < '0' || character > '9');
