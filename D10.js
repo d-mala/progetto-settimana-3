@@ -615,6 +615,20 @@ addClassToTr();
 
 */
 
+console.log('ES 27');
+
+function halfTree(height) {
+  for (let i = 0; i < height; i++) {
+    let line = '';
+    for (let j = 0; j < i + 1; j++) {
+      line += '*';
+    }
+    console.log(line);
+  }
+}
+
+halfTree(6);
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -631,4 +645,21 @@ addClassToTr();
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+console.log('ES 29');
+
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isPrime(121)); 
+console.log(isPrime(19)); 
